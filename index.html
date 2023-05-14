@@ -25,8 +25,12 @@
             >Web<span class="logo-second-part">Studio</span></a
           >
           <ul class="menu list">
-            <li class="current-page-link">
-              <a class="menu-item link menu-item-current-page" href="./index.html">Studio</a>
+            <li>
+              <a
+                class="menu-item link menu-item-current-page"
+                href="./index.html"
+                >Studio</a
+              >
             </li>
             <li>
               <a href="./portfolio.html" class="menu-item link">Portfolio</a>
@@ -58,7 +62,11 @@
       <section class="section hero">
         <div class="container">
           <h1 class="main-heading">Effective Solutions for Your Business</h1>
-          <button type="button" class="main-modal-button button">
+          <button
+            type="button"
+            class="main-modal-button button"
+            data-modal-open
+          >
             Order Service
           </button>
         </div>
@@ -406,45 +414,45 @@
             <li class="customers-list-item">
               <a class="customers-list-link" href="">
                 <svg class="customer-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-customer1"></use> 
-                </svg></a>
+                  <use href="./images/icons.svg#icon-customer1"></use></svg
+              ></a>
             </li>
             <li class="customers-list-item">
               <a class="customers-list-link" href="">
                 <svg class="customer-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-customer2"></use> 
-                </svg></a>
+                  <use href="./images/icons.svg#icon-customer2"></use></svg
+              ></a>
             </li>
             <li class="customers-list-item">
               <a class="customers-list-link" href="">
                 <svg class="customer-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-customer3"></use> 
-                </svg></a>
+                  <use href="./images/icons.svg#icon-customer3"></use></svg
+              ></a>
             </li>
             <li class="customers-list-item">
               <a class="customers-list-link" href="">
                 <svg class="customer-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-customer4"></use> 
-                </svg></a>
+                  <use href="./images/icons.svg#icon-customer4"></use></svg
+              ></a>
             </li>
             <li class="customers-list-item">
               <a class="customers-list-link" href="">
                 <svg class="customer-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-customer5"></use> 
-                </svg></a>
+                  <use href="./images/icons.svg#icon-customer5"></use></svg
+              ></a>
             </li>
             <li class="customers-list-item">
               <a class="customers-list-link" href="">
                 <svg class="customer-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-customer6"></use> 
-                </svg></a>
+                  <use href="./images/icons.svg#icon-customer6"></use></svg
+              ></a>
             </li>
           </ul>
         </div>
       </section>
     </main>
     <!-- Footer -->
-<footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-container">
           <a href="./index.html" class="logo footer-logo link"
@@ -494,11 +502,15 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        
+        <button class="button modal-button" type="button" data-modal-close>
+          <svg class="modal-close-sign" width="8" height="8">
+            <use href="./images/icons.svg#icon-modal-close-button"></use>
+          </svg>
+        </button>
       </div>
     </div>
-
+    <script src="./js/modal.js"></script>
   </body>
 </html>
